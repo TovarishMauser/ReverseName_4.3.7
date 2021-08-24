@@ -19,7 +19,7 @@ namespace ConsoleApp3
 
             while ((j > 0) & (i < name.Length + 1))
             {
-                
+
                 result[j] = name[i];
                 i++;
                 j--;
