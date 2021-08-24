@@ -6,30 +6,15 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            
-            string name;
+            int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
 
-            name = Console.ReadLine();
-
-            int j = name.Length;
-            int i = 0;
-
-            char[] result = new char[name.Length + 1];
-
-
-            while ((j > 0) & (i < name.Length + 1))
+            for (int i = 0; i < array.GetUpperBound(1) + 1; i++)
             {
+                for (int k = 0; k < array.GetUpperBound(0) + 1; k++)
+                    Console.Write(array[k, i] + " ");
 
-                result[j] = name[i];
-                i++;
-                j--;
+                Console.WriteLine();
             }
-
-            for (int k = 0; k < name.Length + 1; k++)
-            {
-                Console.Write(result[k]);
-            }
-            
         }
     }
 }
